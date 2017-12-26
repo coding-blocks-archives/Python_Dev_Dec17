@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>My flask app</title>
+	</head>
+
+	<body>
+		<p>Name: {{name}}</p><br/>
+		<p>Age: {{age}}</p><br/>
+		<p>Date: {{date}}</p><br/>
+
+		{% if name == "Nikhil" %}
+			<p>Welcome, master!</p>
+		{% else %}
+			<p>Unauthorised access!</p>
+		{% endif %}
+		<br/>
+
+		<table border=1>
+			<tbody>
+				{% for row in data %}
+					<tr>
+						{% for column in row %}
+							<td>
+								{{column}}
+							</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</body>
+</html>
