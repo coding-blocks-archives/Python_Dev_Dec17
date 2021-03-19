@@ -2,7 +2,7 @@ click==6.7
 Flask==0.12.2
 gunicorn==19.7.1
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 pymongo==3.6.0
 Werkzeug==0.13
